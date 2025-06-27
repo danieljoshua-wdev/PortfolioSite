@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r164/three.min.js"></script>
+  <script defer src="script.js"></script>
+    
+</head>
+
+<body class="dark">
+
+  <canvas id="shaderCanvas"></canvas>
+  <canvas id="bg-canvas"></canvas>
+
+
+  <aside class="sidebar">
+    <div class="identity">
+      <h1>Daniel Joshua</h1>
+      <p>Web Developer</p>
+    </div>
+
+    <nav>
+      <ul>
+         <li><a href="home.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="info.html">Info</a></li>
+      </ul>
+    </nav>
+
+    <div class="themes">
+      <span class="theme-btn active" data-theme="dark">◐ DARK</span>
+      <span class="theme-btn" data-theme="light">◑ LIGHT</span>
+      <span class="theme-btn" data-theme="mono">▣ MONOSPACED</span>
+    </div>
+  </aside>
+
+  <section id="projects">
+  <h2>Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="Portfolio.png" alt="Project 1" />
+
+      <h3>Portfolio Website</h3>
+      <div class="badges">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+    </div>
+    <div class="card-back">
+      <p>A minimalist personal portfolio built with HTML, CSS, and JavaScript.</p>
+      <div class="project-links">
+        <a href="https://github.com/danieljoshua-wdev/PortfolioSite" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="project-card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="RetroStep.png" alt="Project 2" />
+
+      <h3>RetroStep E-commerce Website</h3>
+      <div class="badges">
+        <span>REACT JS</span>
+        <span>TAILWIND CSS</span>
+        <span>JavaScript</span>
+      </div>
+    </div>
+    <div class="card-back">
+      <p>A modern, responsive sneaker and collectible e-commerce UI built with React, Tailwind CSS, and Vite.
+Deployed on GitHub Pages.</p>
+      <div class="project-links">
+        <a href="https://github.com/danieljoshua-wdev/RetroStep" target="_blank">GitHub</a>
+        <a href="https://danieljoshua-wdev.github.io/RetroStep/" target="_blank">Website</a>
+      </div>
+    </div>
+  </div>
+</div>
+    
+  </div>
+</section>
+
+  <footer class="footer">
+    <p>© Daniel Joshua</p>
+  </footer>
+</body>
+</html>

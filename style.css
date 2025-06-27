@@ -432,3 +432,9 @@ section {
   }
 }
 
+#info p {
+  text-align: justify;
+  line-height: 2;
+  margin-bottom: 1rem;
+  max-width: 800px;
+}
