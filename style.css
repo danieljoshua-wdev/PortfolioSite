@@ -286,20 +286,57 @@ section {
   color: #0af;
 }
 
-/* MOBILE RESPONSIVE FALLBACK */
-@media (max-width: 500px) {
-  .card-inner {
-    height: auto;
-    transform: none !important;
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    border-right: none;
+    border-bottom: 1px solid #333;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
   }
 
-  .card-front,
-  .card-back {
-    position: static;
-    transform: none;
-    backface-visibility: visible;
+  .sidebar .identity h1 {
+    font-size: 1.2rem;
+  }
+
+  .sidebar nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 10px 0;
+  }
+
+  .sidebar nav ul li {
+    margin: 0;
+  }
+
+  .sidebar .themes {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  main, section {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .intro-text {
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .footer {
+    text-align: center;
   }
 }
+
 
 
 .project-card:hover {
