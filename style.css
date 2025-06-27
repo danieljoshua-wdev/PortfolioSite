@@ -291,23 +291,32 @@ section {
     position: relative;
     width: 100%;
     flex-direction: column;
-    border-right: none;
-    border-bottom: 1px solid #333;
-    padding: 15px;
     align-items: center;
     text-align: center;
+    padding: 20px;
+    border-right: none;
+    border-bottom: 1px solid #333;
+    background-color: transparent;
+  }
+
+  .sidebar .identity {
+    margin-bottom: 15px;
   }
 
   .sidebar .identity h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+  }
+
+  .sidebar .identity p {
+    font-size: 0.9rem;
   }
 
   .sidebar nav ul {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
+    gap: 20px;
     padding: 10px 0;
+    flex-wrap: wrap;
   }
 
   .sidebar nav ul li {
@@ -315,10 +324,17 @@ section {
   }
 
   .sidebar .themes {
-    flex-direction: row;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px 16px;
+    border-radius: 12px;
+    display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 15px;
+    z-index: 999;
   }
 
   main, section {
@@ -326,16 +342,13 @@ section {
     padding: 20px;
   }
 
-  .intro-text {
-    text-align: center;
-    font-size: 1rem;
-    padding: 10px;
-  }
-
   .footer {
     text-align: center;
+    font-size: 0.8rem;
+    padding-bottom: 40px; 
   }
 }
+
 
 
 
